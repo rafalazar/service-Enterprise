@@ -1,14 +1,13 @@
 package com.rafalazar.springboot.bootcamp.app.documents;
 
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-@Document(collection="accounts")
+//@Document(collection="accounts")
 public class Account {
 	
 	@Id

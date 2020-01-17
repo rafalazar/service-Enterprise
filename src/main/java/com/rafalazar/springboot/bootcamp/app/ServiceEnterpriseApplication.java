@@ -35,7 +35,6 @@ public class ServiceEnterpriseApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		mongoTemplate.dropCollection("accounts").subscribe();
 		mongoTemplate.dropCollection("enterprise_client").subscribe();
 		
 		Account corriente = new Account("123456", "Corriente");
